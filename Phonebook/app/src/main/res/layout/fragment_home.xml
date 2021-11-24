@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/addcontact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        android:text="ADD CONTACT"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/firstNameEt"
+        android:background="#fff"
+        android:padding="10dp"
+        android:layout_below="@+id/addcontact"
+        android:layout_marginTop="5dp"
+        android:textColorHint="#c5c5c5"
+        android:hint="First Name"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/middleNameEt"
+        android:background="#fff"
+        android:padding="10dp"
+        android:layout_below="@+id/firstNameEt"
+        android:layout_marginTop="5dp"
+        android:textColorHint="#c5c5c5"
+        android:hint="Middle Name"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/lastNameEt"
+        android:background="#fff"
+        android:padding="10dp"
+        android:layout_below="@+id/middleNameEt"
+        android:layout_marginTop="5dp"
+        android:textColorHint="#c5c5c5"
+        android:hint="Last Name"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/phoneMobileEt"
+        android:background="#fff"
+        android:padding="10dp"
+        android:layout_below="@+id/lastNameEt"
+        android:layout_marginTop="5dp"
+        android:textColorHint="#c5c5c5"
+        android:hint="Phone Number (Mobile)"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"/>
+
+    <EditText
+        android:id="@+id/telephoneNumberEt"
+        android:background="#fff"
+        android:padding="10dp"
+        android:layout_below="@+id/phoneMobileEt"
+        android:layout_marginTop="5dp"
+        android:textColorHint="#c5c5c5"
+        android:hint="Telephone Number"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"/>
+
+    <EditText
+        android:id="@+id/addressEt"
+        android:background="#fff"
+        android:padding="10dp"
+        android:layout_below="@+id/telephoneNumberEt"
+        android:layout_marginTop="5dp"
+        android:textColorHint="#c5c5c5"
+        android:hint="Address"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"/>
+
+    <EditText
+        android:id="@+id/emailAddressEt"
+        android:background="#fff"
+        android:padding="10dp"
+        android:layout_below="@+id/addressEt"
+        android:layout_marginTop="5dp"
+        android:textColorHint="#c5c5c5"
+        android:hint="Email Address"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailAddressEt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_baseline_check_24"
+        app:backgroundTint="@color/purple_700" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/cancelFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailAddressEt"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_baseline_cancel_24"
+        app:backgroundTint="@color/purple_700" />
+
+</RelativeLayout>
